@@ -23,6 +23,7 @@ services:
       - "4306:3306"
     volumes: 
       - ./mysql:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
     environment: 
       ALLOW_EMPTY_PASSWORD: 1
       MYSQL_DATABASE: laravel
