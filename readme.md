@@ -1,5 +1,5 @@
 # Laravel local environment with Docker
-## Requirenments
+## Requirements
 * Docker
 * Docker Compose
 * PHP >= 7.2
