@@ -40,6 +40,10 @@ RUN apk add --no-cache libpng-dev \
 RUN pecl install mailparse \
     && docker-php-ext-enable mailparse
 
+# Install xdebug
+RUN pecl install xdebug \
+  && docker-php-ext-enable xdebug
+
 # https://stackoverflow.com/a/47673183/687274
 RUN apk add --no-cache libmcrypt-dev \
     && yes | pecl install -o -f mcrypt-1.0.1 \
